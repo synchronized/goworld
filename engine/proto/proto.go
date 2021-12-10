@@ -13,55 +13,55 @@ const (
 	// MT_INVALID is the invalid message type
 	MT_INVALID = iota
 	// MT_SET_GAME_ID is a message type for game
-	MT_SET_GAME_ID
+	MT_SET_GAME_ID = 1
 	// MT_SET_GATE_ID is a message type for gate
-	MT_SET_GATE_ID
+	MT_SET_GATE_ID = 2
 	// MT_NOTIFY_CREATE_ENTITY is a message type for creating entities
-	MT_NOTIFY_CREATE_ENTITY
+	MT_NOTIFY_CREATE_ENTITY = 3
 	// MT_NOTIFY_DESTROY_ENTITY is a message type for destroying entities
-	MT_NOTIFY_DESTROY_ENTITY
+	MT_NOTIFY_DESTROY_ENTITY = 4
 	// MT_KVREG_REGISTER is a message type for declaring services
-	MT_KVREG_REGISTER
+	MT_KVREG_REGISTER = 5
 	// MT_CALL_ENTITY_METHOD is a message type for calling entity methods
-	MT_CALL_ENTITY_METHOD
+	MT_CALL_ENTITY_METHOD = 6
 	// MT_CREATE_ENTITY_SOMEWHERE is a message type for creating entities
-	MT_CREATE_ENTITY_SOMEWHERE
+	MT_CREATE_ENTITY_SOMEWHERE = 7
 	// MT_LOAD_ENTITY_SOMEWHERE is a message type loading entities
-	MT_LOAD_ENTITY_SOMEWHERE
+	MT_LOAD_ENTITY_SOMEWHERE = 8
 	// MT_NOTIFY_CLIENT_CONNECTED is a message type for clients
-	MT_NOTIFY_CLIENT_CONNECTED
+	MT_NOTIFY_CLIENT_CONNECTED = 9
 	// MT_NOTIFY_CLIENT_DISCONNECTED is a message type for clients
-	MT_NOTIFY_CLIENT_DISCONNECTED
+	MT_NOTIFY_CLIENT_DISCONNECTED = 10
 	// MT_CALL_ENTITY_METHOD_FROM_CLIENT is a message type for clients
-	MT_CALL_ENTITY_METHOD_FROM_CLIENT
+	MT_CALL_ENTITY_METHOD_FROM_CLIENT = 11
 	// MT_SYNC_POSITION_YAW_FROM_CLIENT is a message type for clients
-	MT_SYNC_POSITION_YAW_FROM_CLIENT
+	MT_SYNC_POSITION_YAW_FROM_CLIENT = 12
 	// MT_NOTIFY_GATE_DISCONNECTED is a message type to notify gate disconnected
-	MT_NOTIFY_GATE_DISCONNECTED
+	MT_NOTIFY_GATE_DISCONNECTED = 13
 	// MT_START_FREEZE_GAME is a message type for hot swapping
-	MT_START_FREEZE_GAME
+	MT_START_FREEZE_GAME = 14
 	// MT_START_FREEZE_GAME_ACK is a message type for hot swapping
-	MT_START_FREEZE_GAME_ACK
+	MT_START_FREEZE_GAME_ACK = 15
 
 	// Message types for migrating
 	// MT_MIGRATE_REQUEST is a message type for entity migrations
-	MT_MIGRATE_REQUEST
+	MT_MIGRATE_REQUEST = 16
 	// MT_REAL_MIGRATE is a message type for entity migrations
-	MT_REAL_MIGRATE
+	MT_REAL_MIGRATE = 17
 	// MT_QUERY_SPACE_GAMEID_FOR_MIGRATE is a message type for entity migrations
-	MT_QUERY_SPACE_GAMEID_FOR_MIGRATE
-	MT_CANCEL_MIGRATE
+	MT_QUERY_SPACE_GAMEID_FOR_MIGRATE = 18
+	MT_CANCEL_MIGRATE                 = 19
 
 	// MT_CALL_NIL_SPACES message is used to call nil spaces on all games
-	MT_CALL_NIL_SPACES
+	MT_CALL_NIL_SPACES = 22
 	// MT_SET_GAME_ID_ACK is sent by dispatcher to game to ACK MT_SET_GAME_ID message
-	MT_SET_GAME_ID_ACK
+	MT_SET_GAME_ID_ACK = 23
 	// MT_NOTIFY_GAME_CONNECTED is sent by dispatcher to game to notify new game connected
-	MT_NOTIFY_GAME_CONNECTED
-	MT_NOTIFY_GAME_DISCONNECTED
-	MT_NOTIFY_DEPLOYMENT_READY
+	MT_NOTIFY_GAME_CONNECTED    = 24
+	MT_NOTIFY_GAME_DISCONNECTED = 25
+	MT_NOTIFY_DEPLOYMENT_READY  = 26
 	// MT_GAME_LBC_INFO contains game load balacing info
-	MT_GAME_LBC_INFO
+	MT_GAME_LBC_INFO = 27
 )
 
 // Alias message types
